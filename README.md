@@ -7,4 +7,12 @@ For each module, the Java source code is in the `module<X>` where `<X>` is the m
 are under either the `src/main/webapp/module<X>` folder or the
 `src/main/webapp/WEB-INF/module<X>` folder.
 
+## Modules
+
+| Module | Subjects |
+| ------ | -------- |
+| 1 | Instruction to Java Servlets |
+| 2 | Handing HTTP Requests |
+| 3 | Generating HTTP Responses<br>Cookies and Session Tracking |
+
 ## Usage
