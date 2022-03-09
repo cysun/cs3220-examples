@@ -18,13 +18,11 @@ The web resources are under either the `src/main/webapp/module<X>` folder or the
 ## Usage
 
 To run the code, you need to first clone the repository to your computer, then
-import the project into Eclipse as a *Maven Project*.
+import the project into Eclipse as a Maven Project.
 
 ### Clone Project Repository
 
-First, copy the repository URL as shown below:
-
-![Screenshot of Copying Repository URL](https://mynotes.cysun.org/files/view/1001284)
+First, copy the repository URL `https://github.com/cysun/cs3220-examples.git` .
 
 Then, in Eclipse, open Git perspective (Window -> Perspective -> Open Perspective -> Git).
 Click the `Clone a Git Repository` button, and a popup window like the following
@@ -51,13 +49,13 @@ In Eclipse, from the File menu, select Import -> Existing Maven Projects as show
 
 ![Screenshot of Local Destination Screen](https://mynotes.cysun.org/files/view/1001290)
 
-Click the Next button, and on the next screen, set Root Directory to the local
-repository directory as shown in the screenshot below:
+Click the Next button, and on the next screen, set Root Directory to the directory
+where the repository was cloned to in the *Clone Project Repository* step.
 
 ![Screenshot of Local Destination Screen](https://mynotes.cysun.org/files/view/1001287)
 
 Click the Finish button to import the project. It will take Eclipse a little time
-to import the project (you can see the progress at the bottom right corner of
+to complete the import (you can see the progress at the bottom right corner of
 Eclipse). After the project is imported, you can run it like a Eclipse Dynamic
 Web Project, e.g. right click on the project name and select Run As -> Run on Server.
 
