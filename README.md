@@ -14,6 +14,7 @@ The web resources are under either the `src/main/webapp/module<X>` folder or the
 | 1 | Instruction to Java Servlets |
 | 2 | Handing HTTP Requests |
 | 3 | Generating HTTP Responses<br>Cookies and Session Tracking |
+| 4 | Instruction to JSP and MVC Architecture<br>Expression Language (EL) |
 
 ## Usage
 
