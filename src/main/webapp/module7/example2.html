@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Hello <span id="name"></span>!</p>
+    <p>
+      <input type="text" name="name" />
+      <button>Say Hi</button>
+    </p>
+    <script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("button").click(function () {
+          var name = $("input[name='name']").val();
+          $("#name").html(name);
+        });
+      });
+    </script>
+  </body>
+</html>

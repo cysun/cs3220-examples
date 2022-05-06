@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Language Question</title>
+<style>
+  .answer {margin-bottom: 3px;}
+</style>
+</head>
+<body>
+<p>What programming languages do you know?</p>
+<div id="answers">
+  <div class="answer">
+    <input type="text" name="answer" /> <button id="add">+</button>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+    $("#add").click(function(){
+        var answer = $("<div class='answer'></div)");
+        answer.append("<input type='text' name='answer' /> ");
+        var minus = $("<button>-</button>");
+        minus.click(function(){
+           answer.remove(); 
+        });
+        answer.append(minus);
+        $("#answers").append(answer);
+    });
+});
+</script>
+</body>
+</html>

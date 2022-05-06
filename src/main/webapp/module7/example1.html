@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Hello <span id="name"></span>!</p>
+    <p>
+      <input type="text" name="name" />
+      <button onclick="sayHi()">Say Hi</button>
+    </p>
+    <script>
+      function sayHi() {
+        var name = document.getElementsByTagName("input")[0].value;
+        var placeholder = document.getElementById("name");
+        placeholder.innerHTML = name;
+      }
+    </script>
+  </body>
+</html>

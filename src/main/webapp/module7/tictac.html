@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tic Tac</title>
+<style>
+td {
+    text-align: center;
+    vertical-align: middle;
+    width: 2em;
+    height: 2em;
+}
+</style>
+</head>
+<body>
+
+<table border="1">
+  <tr><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td></tr>
+  <tr><td></td><td></td><td></td></tr>
+</table>
+
+<p><button>Count</button></p>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+$(function(){
+    var letter = "X";
+    $("td").click(function(){
+        if( ! $(this).text() )
+        {
+            $(this).text(letter);
+            letter = (letter == "X" ? "O" : "X");
+        }
+    });
+    $("button").click(function(){
+        var x = 0;
+        var o = 0;
+        $("td").each(function(){
+            if( $(this).text() == 'X' ) ++x;
+            if( $(this).text() == 'O' ) ++o;
+        });
+        alert("X: " + x + " O: " + o);
+    });
+});
+</script>
+</body>
+</html>

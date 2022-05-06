@@ -17,6 +17,7 @@ The web resources are under either the `src/main/webapp/module<X>` folder or the
 | 4 | Instruction to JSP and MVC Architecture<br>Expression Language (EL) |
 | 5 | JSP Standard Tag Library (JSTL) |
 | 6 | Database Access with JDBC |
+| 7 | Client-Side JavaScript and jQuery |
 
 ## Usage
 
