@@ -18,6 +18,7 @@ The web resources are under either the `src/main/webapp/module<X>` folder or the
 | 5 | JSP Standard Tag Library (JSTL) |
 | 6 | Database Access with JDBC |
 | 7 | Client-Side JavaScript and jQuery |
+| 8 | Asynchronous JavaScript and XML (AJAX) |
 
 ## Usage
 

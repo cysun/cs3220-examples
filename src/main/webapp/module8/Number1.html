@@ -1,0 +1,64 @@
+<html>
+<head><title>AJAX Example 1</title>
+
+<script type="text/javascript">
+function newXMLHttpRequest()
+{
+  var xmlreq = false;
+
+  if( window.XMLHttpRequest ) xmlreq = new XMLHttpRequest();
+  else if( window.ActiveXObject )
+  {
+    try
+    {
+      xmlreq = new ActiveXObject( "Msxml2.XMLHTTP" );
+    }
+    catch( e1 )
+    {
+      try
+      {
+        xmlreq = new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      catch( e2 ) {}
+    }
+  }
+
+  return xmlreq;
+}
+
+
+function getReadyStateHandler( req, responseHandler )
+{
+  return function ()
+  {
+    if(req.readyState == 4)
+    {
+      
+      if( req.status == 200 ) responseHandler( req.responseText );
+      else alert("HTTP error: "+req.status);
+    }
+  }
+}
+
+function updateDocument( respText )
+{
+    document.getElementById( "number" ).innerHTML = respText;
+}
+
+function clickHandler()
+{
+  var req = newXMLHttpRequest();
+  req.onreadystatechange = getReadyStateHandler( req, updateDocument );
+  
+  req.open("GET", "Number", true);
+  req.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+  req.send( null );
+}
+</script>
+
+</head>
+<body>
+<p>some random number: <span id="number">0.1</span></p>
+<button onclick="clickHandler();">click</button>
+</body>
+</html>
